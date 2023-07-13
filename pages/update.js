@@ -20,7 +20,7 @@ export default function Update() {
 
   const fetchUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/users/${id}`);
+      const response = await axios.get(`https://orange-red-ox-hat.cyclic.app/api/users/${id}`);
       const user = response.data;
       setRank(user.rank);
       setName(user.first_name);
@@ -42,7 +42,7 @@ export default function Update() {
     };
 
     try {
-      const response = await axios.put(`http://localhost:3000/api/users/${id}`, updatedUser);
+      const response = await axios.put(`https://orange-red-ox-hat.cyclic.app/api/users/${id}`, updatedUser);
       console.log('User updated successfully:', response.data);
 
       Swal.fire({

@@ -14,7 +14,7 @@ export default function Home() {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/users');
+      const response = await axios.get('https://orange-red-ox-hat.cyclic.app/api/users');
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -43,7 +43,7 @@ export default function Home() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.delete(`http://localhost:3000/api/users/${id}`);
+          await axios.delete(`https://orange-red-ox-hat.cyclic.app/api/users/${id}`);
           console.log('User deleted successfully');
           fetchUsers();
           Swal.fire({

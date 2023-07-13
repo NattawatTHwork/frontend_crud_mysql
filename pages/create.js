@@ -22,7 +22,7 @@ export default function Create() {
         };
 
         try {
-            const response = await axios.post('http://localhost:3000/api/users', newUser);
+            const response = await axios.post('https://orange-red-ox-hat.cyclic.app/api/users', newUser);
             console.log('User added successfully:', response.data);
 
             Swal.fire({
