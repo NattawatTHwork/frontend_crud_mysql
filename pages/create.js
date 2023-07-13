@@ -50,11 +50,11 @@ export default function Create() {
     return (
         <div>
             <Navbar />
-            <h1 className="text-4xl font-bold my-4">Create User</h1>
+            <h1 className="text-4xl font-bold my-4">เพิ่มรายชื่อ</h1>
             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
                 <div className="mb-4">
                     <label htmlFor="rank" className="block text-gray-700 font-bold mb-2">
-                        Rank:
+                        ยศ:
                     </label>
                     <input
                         type="text"
@@ -66,7 +66,7 @@ export default function Create() {
                 </div>
                 <div className="mb-4">
                     <label htmlFor="first_name" className="block text-gray-700 font-bold mb-2">
-                        Name:
+                        ชื่อ:
                     </label>
                     <input
                         type="text"
@@ -78,7 +78,7 @@ export default function Create() {
                 </div>
                 <div className="mb-4">
                     <label htmlFor="last_name" className="block text-gray-700 font-bold mb-2">
-                        Last Name:
+                        นามสกุล:
                     </label>
                     <input
                         type="text"
@@ -90,7 +90,7 @@ export default function Create() {
                 </div>
                 <div className="mb-4">
                     <label htmlFor="phone_number" className="block text-gray-700 font-bold mb-2">
-                        Phone:
+                        เบอร์โทร:
                     </label>
                     <input
                         type="text"
@@ -104,7 +104,7 @@ export default function Create() {
                     type="submit"
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 >
-                    Add User
+                    เพิ่ม
                 </button>
             </form>
         </div>

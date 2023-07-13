@@ -71,11 +71,11 @@ export default function Home() {
         <thead>
           <tr>
             <th className="py-3 px-6 bg-gray-100 text-gray-600">ID</th>
-            <th className="py-3 px-6 bg-gray-100 text-gray-600">Rank</th>
-            <th className="py-3 px-6 bg-gray-100 text-gray-600">Name</th>
-            <th className="py-3 px-6 bg-gray-100 text-gray-600">Last Name</th>
-            <th className="py-3 px-6 bg-gray-100 text-gray-600">Phone</th>
-            <th className="py-3 px-6 bg-gray-100 text-gray-600">Actions</th>
+            <th className="py-3 px-6 bg-gray-100 text-gray-600">ยศ</th>
+            <th className="py-3 px-6 bg-gray-100 text-gray-600">ชื่อ</th>
+            <th className="py-3 px-6 bg-gray-100 text-gray-600">นามสกุล</th>
+            <th className="py-3 px-6 bg-gray-100 text-gray-600">เบอร์โทร</th>
+            <th className="py-3 px-6 bg-gray-100 text-gray-600">ตัวเลือก</th>
           </tr>
         </thead>
         <tbody>
@@ -88,10 +88,10 @@ export default function Home() {
               <td className="py-4 px-6">{user.phone_number}</td>
               <td className="py-4 px-6">
                 <button onClick={() => handleEdit(user.id)} className="mr-2 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
-                  Edit
+                  แก้ไข
                 </button>
                 <button onClick={() => handleDelete(user.id)} className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">
-                  Delete
+                  ลบ
                 </button>
               </td>
             </tr>
